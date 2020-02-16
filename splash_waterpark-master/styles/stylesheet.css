@@ -1,0 +1,440 @@
+html {
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 300px;
+  padding-top: 150px;
+  min-height: 100%;
+}
+
+body {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  background: url("https://www.whitewaterwest.com/wp-content/uploads/2019/11/RCI-CocoCay-Overview2-scaled.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Header with Nav bar styling */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: "Lobster", cursive, "Arial", "Helvetica", sans-serif;
+  font-weight: 200;
+  font-size: 150%;
+  background: url("../images/header.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  letter-spacing: 1.2px;
+  border-bottom: 1px solid rgb(195, 213, 236);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headerTitle {
+  text-align: center;
+  margin: 10px;
+}
+
+.navItem {
+  margin: 30px 30px 30px 5px;
+}
+
+.logoImage {
+  height: 40px;
+  width: 60px;
+}
+
+/* Footer styling */
+
+footer {
+  border-top: 1px solid rgb(195, 213, 236);
+  font-family: Roboto, sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/header.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.footerBlock {
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px;
+  padding: 10px 30px;
+  border: 1px solid rgb(195, 213, 236);
+}
+
+h1 {
+  font-family: "Lobster", cursive, "Arial", "Helvetica", sans-serif;
+  font-weight: 100;
+  color: rgb(0, 125, 198);
+  text-align: left;
+  border-radius: 10px;
+  letter-spacing: 1.2px;
+}
+
+h2,
+h3 {
+  font-family: "Lobster", sans-serif, "Arial", "Helvetica";
+  font-weight: 100;
+  color: rgb(34, 35, 41);
+  background-color: rgb(195, 213, 236);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  letter-spacing: 1.2px;
+}
+
+h3 {
+  font-family: Lobster, sans-serif;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+ul,
+form {
+  font-family: Roboto, sans-serif;
+}
+
+.banner {
+  text-align: center;
+}
+
+.bannerImage {
+  width: 500px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  border: 1px solid rgb(195, 213, 236);
+}
+
+.iconContainer {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.icon {
+  padding: 10px;
+}
+
+/* Homepage */
+
+.indexTopSectionCover {
+  /* Image source: https://unsplash.com */
+  background: url("https://images.unsplash.com/photo-1503505946976-e489ce29e0fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.indexTopSectionDescription {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.indexBanner {
+  width: 700px;
+  box-shadow: 20px 20px 50px grey;
+  margin: auto;
+}
+
+.index-grid-item {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+#indexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bouncing-text {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  position: relative;
+  justify-content: space-evenly;
+  background-color: rgb(195, 213, 236);
+}
+
+.indexAttractionImage {
+  justify-content: center;
+}
+
+.bouncing-text p {
+  width: 700px;
+  height: 25px;
+  -moz-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  -moz-animation: bouncing-text 10s linear infinite;
+  -webkit-animation: bouncing-text 10s linear infinite;
+  animation: bouncing-text 10s linear infinite;
+}
+
+@-moz-keyframes bouncing-text {
+  0% {
+    -moz-transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes bouncing-text {
+  0% {
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+@keyframes bouncing-text {
+  0% {
+    margin-left: -50%;
+  }
+  50% {
+    margin-right: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+/* Plan your visit */
+
+/* Services */
+#services > li {
+  padding: 8.5px;
+  text-align: left;
+}
+
+/* Where to eat */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(195, 213, 236);
+  border-radius: 10px;
+}
+
+.flex-container > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.where-to-eat > p {
+  text-align: left;
+  margin-left: 120px;
+}
+
+.restaurant-images {
+  float: left;
+  width: 100px;
+}
+
+#googleMap > div {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.googleMapImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact us form */
+.containerForm {
+  border-radius: 10px;
+  background-color: rgb(195, 213, 236);
+  padding: 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Button-popup container*/
+.button-popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: rgb(115, 168, 238);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* The actual popup */
+.popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgb(115, 168, 238);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.button-popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+}
+
+.button-popup .show {
+  visibility: visible;
+  -moz-animation: cssAnimation 0s ease-in 2s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 2s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 2s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+/* Attractions */
+
+/* Animation for attractions titles */
+@keyframes titleAnimation {
+  0% {
+    background-color: white;
+    border: 1px dotted rgb(195, 213, 236);
+  }
+
+  50% {
+    background-color: rgb(195, 213, 236);
+  }
+
+  100% {
+    background-color: white;
+    border: 1px dotted rgb(195, 213, 236);
+  }
+}
+
+/* Attractions page main title */
+#attractionsTitle {
+  margin-left: 20px;
+}
+
+/* Styling for attractions container */
+#attractionsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Styling for a box with a sinlge attraction */
+.attractionBox {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+  max-width: 300px;
+  background-color: white;
+  border: 1px solid rgb(195, 213, 236);
+}
+
+/* Styling for a sinle attraction title */
+.attractionTitle {
+  animation-name: titleAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: 10;
+  border-radius: 10px;
+}
+
+.attractionImage {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.photoCredit {
+  opacity: 0.6;
+  margin: 0;
+  font-size: 12px;
+}
